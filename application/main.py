@@ -5,6 +5,7 @@ import discord
 import requests
 import json
 from module.env import discord_settings, slack_settings
+from module.server import server_thread
 
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
@@ -31,4 +32,5 @@ async def on_voice_state_update(user, before, after):
             requests.post(slack_settings.SLACK_WEB_HOOK_URL, json.dumps(data))
 
 if __name__ == "__main__":
+    server_thread()
     client.run(discord_settings.DISCORD_TOKEN)

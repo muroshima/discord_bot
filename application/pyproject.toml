@@ -9,6 +9,8 @@ python = "^3.12"
 pydantic-settings = "^2.6.1"
 discord = "^2.3.2"
 requests = "^2.32.3"
+fastapi = "^0.115.4"
+uvicorn = "^0.32.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.2"
