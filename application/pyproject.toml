@@ -7,7 +7,7 @@ authors = ["takuron1996"]
 [tool.poetry.dependencies]
 python = "^3.12"
 pydantic-settings = "^2.6.1"
-discord = "^2.3.2"
+discord = "^2.4.0"
 requests = "^2.32.3"
 fastapi = "^0.115.4"
 uvicorn = "^0.32.0"
