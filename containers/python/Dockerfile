@@ -5,5 +5,5 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /application
 RUN pip install --upgrade pip && pip install poetry
 COPY application/pyproject.toml ./
-RUN poetry install
+RUN poetry install --no-root
 CMD ["poetry", "run", "python", "main.py"]
