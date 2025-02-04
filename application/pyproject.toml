@@ -1,8 +1,8 @@
-[tool.poetry]
-name = "discord_botg"
-version = "1.0.1"
-description = "テンプレート"
-authors = ["takuron1996"]
+# [tool.poetry]
+# name = "discord_botg"
+# version = "1.0.1"
+# description = "テンプレート"
+# authors = ["takuron1996"]
 
 [tool.poetry.dependencies]
 python = "^3.12"
